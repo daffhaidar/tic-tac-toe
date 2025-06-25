@@ -465,4 +465,3 @@ class TicTacToe {
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => new TicTacToe()); 
     new TicTacToe();
-}); 
