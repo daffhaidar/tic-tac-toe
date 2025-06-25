@@ -58,11 +58,10 @@ Tic Tac Toe game against AI bot with customizable mode, score, and board size. G
 
 ## Teknologi / Technologies
 
-- HTML5, CSS3 (Grid, Flexbox, Animations, Responsive) — semua style sudah di-inline di index.html
-- Vanilla JavaScript (ES6+) — seluruh logic sudah di-inline di index.html
-- Node.js + live-server (npm run dev) hanya untuk development
-
-> Seluruh logic dan style sudah berada di dalam satu file: `index.html` (no external CSS/JS file)
+- HTML5, CSS3 (Grid, Flexbox, Animations, Responsive)
+- Vanilla JavaScript (ES6+), modular & clean code
+- Node.js + live-server (npm run dev)
+- Vercel ready
 
 ---
 
