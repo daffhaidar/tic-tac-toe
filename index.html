@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe vs Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mode Selection Screen -->
+    <div class="mode-screen" id="modeScreen">
+        <div class="mode-container">
+            <h1>Choose Your Mode 🎮</h1>
+            <p class="subtitle">Select your player symbol</p>
+            
+            <div class="mode-grid">
+                <div class="mode-card" data-mode="X">
+                    <div class="mode-icon">❌</div>
+                    <h3>Play as X</h3>
+                    <p class="description">You go first (always)</p>
+                </div>
+                
+                <div class="mode-card" data-mode="O">
+                    <div class="mode-icon">⭕</div>
+                    <h3>Play as O</h3>
+                    <p class="description">Bot goes first</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Difficulty Selection Screen -->
+    <div class="difficulty-screen" id="difficultyScreen" style="display: none;">
+        <div class="difficulty-container">
+            <h1>Choose Your Challenge 🤖</h1>
+            <p class="subtitle">Select bot difficulty level</p>
+            
+            <div class="difficulty-grid">
+                <div class="difficulty-card" data-difficulty="easy">
+                    <div class="difficulty-icon">😊</div>
+                    <h3>Easy</h3>
+                    <p class="win-rate">Win Rate: 60%</p>
+                    <p class="description">Perfect for beginners</p>
+                </div>
+                
+                <div class="difficulty-card" data-difficulty="mid">
+                    <div class="difficulty-icon">😐</div>
+                    <h3>Medium</h3>
+                    <p class="win-rate">Win Rate: 50%</p>
+                    <p class="description">Balanced challenge</p>
+                </div>
+                
+                <div class="difficulty-card" data-difficulty="hard">
+                    <div class="difficulty-icon">😤</div>
+                    <h3>Hard</h3>
+                    <p class="win-rate">Win Rate: 30%</p>
+                    <p class="description">For experienced players</p>
+                </div>
+                
+                <div class="difficulty-card" data-difficulty="god">
+                    <div class="difficulty-icon">👹</div>
+                    <h3>GOD</h3>
+                    <p class="win-rate">Win Rate: 0.08%</p>
+                    <p class="description">Good luck... 😈</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Board Size Selection Screen -->
+    <div class="size-screen" id="sizeScreen" style="display: none;">
+        <div class="size-container">
+            <h1>Choose Board Size 📐</h1>
+            <p class="subtitle">Select the size of your game board</p>
+            
+            <div class="size-grid">
+                <div class="size-card" data-size="3">
+                    <div class="size-icon">3×3</div>
+                    <h3>Classic</h3>
+                    <p class="win-requirement">Need 3 in a row</p>
+                    <p class="description">Traditional tic-tac-toe</p>
+                </div>
+                
+                <div class="size-card" data-size="4">
+                    <div class="size-icon">4×4</div>
+                    <h3>Medium</h3>
+                    <p class="win-requirement">Need 4 in a row</p>
+                    <p class="description">More challenging</p>
+                </div>
+                
+                <div class="size-card" data-size="5">
+                    <div class="size-icon">5×5</div>
+                    <h3>Large</h3>
+                    <p class="win-requirement">Need 5 in a row</p>
+                    <p class="description">Strategic gameplay</p>
+                </div>
+                
+                <div class="size-card" data-size="10">
+                    <div class="size-icon">10×10</div>
+                    <h3>Mega</h3>
+                    <p class="win-requirement">Need 5 in a row</p>
+                    <p class="description">Ultimate challenge! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen" id="gameScreen" style="display: none;">
+        <div class="container">
+            <div class="game-header">
+                <h1>Tic Tac Toe vs Bot 🤖</h1>
+                <div class="game-info">
+                    <div class="player-badge" id="playerBadge">You: X</div>
+                    <div class="difficulty-badge" id="difficultyBadge">Easy</div>
+                    <div class="size-badge" id="sizeBadge">3×3</div>
+                </div>
+            </div>
+            <div class="scoreboard" id="scoreboard">
+                <div class="score user-score"><span id="userScore">0</span> <span id="userLabel">You</span></div>
+                <div class="score bot-score"><span id="botScore">0</span> <span id="botLabel">Bot</span></div>
+            </div>
+            <div class="score-target" id="scoreTarget">First to <b>21</b> points wins!</div>
+            <div class="status" id="status">Your turn! 🎯</div>
+            <div class="board-container">
+                <div class="board" id="board">
+                    <!-- Board cells will be generated dynamically -->
+                </div>
+            </div>
+            <div class="game-buttons">
+                <button id="restartButton">Restart Game</button>
+                <button id="changeSettingsButton">Change Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe-vs-bot",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game vs AI bot with multiple difficulty levels",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=/",
+    "start": "npx live-server --port=3000 --open=/",
+    "build": "echo 'Static files ready for deployment'"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "game",
+    "ai",
+    "bot",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+} 
