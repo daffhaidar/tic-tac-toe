@@ -65,19 +65,6 @@ Tic Tac Toe game against AI bot with customizable mode, score, and board size. G
 
 ---
 
-## Struktur File / File Structure
-
-```
-tic-tac-toe/
-├── index.html      # HTML utama, seluruh logic & style di sini
-├── package.json    # Node.js config (untuk live-server)
-├── package-lock.json
-├── .gitignore
-└── README.md       # Dokumentasi
-```
-
----
-
 ## Lisensi / License
 
 MIT License - bebas digunakan untuk keperluan apapun.
