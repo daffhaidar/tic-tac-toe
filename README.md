@@ -37,31 +37,32 @@ Tic Tac Toe game against AI bot with customizable mode, score, and board size. G
 4. Siapa duluan mencapai target skor, menang!
 5. GOD mode: bot sangat agresif, win condition 5 simbol
 
-1. Choose mode (X/O), difficulty, and board size
-2. Play your turn, make a line according to win condition
-3. Each full line gives 1 point, board resets if full
-4. First to target score wins!
-5. GOD mode: bot is super aggressive, win condition is 5 symbols
+6. Choose mode (X/O), difficulty, and board size
+7. Play your turn, make a line according to win condition
+8. Each full line gives 1 point, board resets if full
+9. First to target score wins!
+10. GOD mode: bot is super aggressive, win condition is 5 symbols
 
 ---
 
 ## Skor & Win Condition / Score & Win Condition
 
-| Mode   | Target Skor / Target Score | Win Condition |
-|--------|---------------------------|--------------|
-| Easy   | 3                         | 3 in a row   |
-| Mid    | 5                         | 3 in a row   |
-| Hard   | 10                        | 3 in a row   |
-| GOD    | 21                        | 5 in a row   |
+| Mode | Target Skor / Target Score | Win Condition |
+| ---- | -------------------------- | ------------- |
+| Easy | 3                          | 3 in a row    |
+| Mid  | 5                          | 3 in a row    |
+| Hard | 10                         | 3 in a row    |
+| GOD  | 21                         | 5 in a row    |
 
 ---
 
 ## Teknologi / Technologies
 
-- HTML5, CSS3 (Grid, Flexbox, Animations, Responsive)
-- Vanilla JavaScript (ES6+), modular & clean code
-- Node.js + live-server (npm run dev)
-- Vercel ready
+- HTML5, CSS3 (Grid, Flexbox, Animations, Responsive) — semua style sudah di-inline di index.html
+- Vanilla JavaScript (ES6+) — seluruh logic sudah di-inline di index.html
+- Node.js + live-server (npm run dev) hanya untuk development
+
+> Seluruh logic dan style sudah berada di dalam satu file: `index.html` (no external CSS/JS file)
 
 ---
 
@@ -69,11 +70,10 @@ Tic Tac Toe game against AI bot with customizable mode, score, and board size. G
 
 ```
 tic-tac-toe/
-├── index.html      # HTML utama, UI responsif
-├── style.css       # CSS modern & mobile friendly
-├── script.js       # JavaScript modular, clean, AI logic
-├── package.json    # Node.js config
-├── vercel.json     # Vercel config
+├── index.html      # HTML utama, seluruh logic & style di sini
+├── package.json    # Node.js config (untuk live-server)
+├── package-lock.json
+├── .gitignore
 └── README.md       # Dokumentasi
 ```
 
@@ -82,4 +82,4 @@ tic-tac-toe/
 ## Lisensi / License
 
 MIT License - bebas digunakan untuk keperluan apapun.
-MIT License - free to use for any purpose. 
+MIT License - free to use for any purpose.
